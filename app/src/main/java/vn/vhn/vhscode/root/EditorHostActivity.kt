@@ -229,8 +229,8 @@ class EditorHostActivity : FragmentActivity(), ServiceConnection,
                 attrs.flags = attrs.flags and WindowManager.LayoutParams.FLAG_FULLSCREEN.inv()
             }
             window.attributes = attrs
-            window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutInDisplayCutoutMode.always
         }
+        window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutInDisplayCutoutMode.always
 
         if (mOrientationLockerNeedsRelock) {
             updateLockOrientationFromPreferences()
