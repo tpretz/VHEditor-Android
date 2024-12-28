@@ -44,7 +44,7 @@ android {
             defaultConfig.targetSdkVersion 30 // google play require minimum version to be 30
         } else {
             buildConfigField "Boolean", "GOOGLEPLAY_BUILD", "false"
-            defaultConfig.targetSdkVersion 28 // Dont update - /data/data no longer executable
+            defaultConfig.targetSdkVersion 30 // Dont update - /data/data no longer executable
         }
         versionCode packageJson.config.versionCode
         versionName System.getenv("CI_VERSION_NAME") ?: "git describe --tags --abbrev=0".execute().text.trim()
