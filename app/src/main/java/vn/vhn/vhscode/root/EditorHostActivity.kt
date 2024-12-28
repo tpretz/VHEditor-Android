@@ -230,7 +230,7 @@ class EditorHostActivity : FragmentActivity(), ServiceConnection,
             }
             window.attributes = attrs
         }
-        window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutInDisplayCutoutMode.always
+        window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_ALWAYS
 
         if (mOrientationLockerNeedsRelock) {
             updateLockOrientationFromPreferences()
